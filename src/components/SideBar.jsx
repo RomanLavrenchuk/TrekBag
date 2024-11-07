@@ -2,7 +2,7 @@ import AddItemForm from './AddItemForm';
 import ButtonGroup from './ButtonGroup';
 
 export default function SideBar({
-    onAddItem,
+    handleAddItem,
     handleRemoveAllItems,
     handleResetToInitial,
     handleMarkAllAsComplete,
@@ -10,7 +10,8 @@ export default function SideBar({
 }) {
     return (
         <div className='sidebar'>
-            <AddItemForm onAddItem={onAddItem} />
+            <AddItemForm onAddItem={handleAddItem} />
+            <button onClick></button>
 
             <ButtonGroup
                 handleRemoveAllItems={handleRemoveAllItems}
